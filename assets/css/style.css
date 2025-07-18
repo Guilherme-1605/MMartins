@@ -1,0 +1,557 @@
+/* Reset e Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Top Bar */
+.top-bar {
+  background-image: url('../img/eletrica.png');
+  height: 233px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.top-bar::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.top-bar * {
+  position: relative;
+  z-index: 2;
+}
+
+.top-bar .top-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.top-bar .top-info a:hover {
+  color: #ddd;
+}
+
+.top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  font-size: 14px;
+}
+
+.top-info .left,
+.top-info .right {
+  display: flex;
+  gap: 20px; 
+}
+
+.top-info i {
+  margin-right: 5px;
+}
+
+.logo {
+  margin: 0px 0 10px;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.brand-name {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-top: 10px;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 8px 0;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.follow-us {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+
+/* Nossos Serviços */
+.nossos-servicos {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.banner {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 40px 40px;
+  text-align: center;
+}
+
+.banner img {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* Carrossel */
+
+
+.wrapper {
+  max-width: 1100px;
+  padding: 40px 10px;
+  margin: 0 auto 40px;
+  overflow: hidden;
+}
+
+.card-list {
+  display: flex;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  border-bottom: 1px solid #eee;
+}
+
+.card-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #ffffffcc;
+  color: #1e3a8a;
+  font-size: 0.75rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.card-profile {
+  display: flex;
+  align-items: center;
+}
+
+.card-profile img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-profile-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.card-profile-role {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.card-button {
+  text-decoration: none;
+  background: #1e3a8a;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.card-button:hover {
+  background: #374ad0;
+}
+
+.swiper-pagination-bullet {
+  background: #a5b4fc;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #6366f1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #1e3a8a;
+  transition: 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #6366f1;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 20px 10px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Sobre Nós */
+.sobre-nos-section {
+  background-color: #f3f4f6;
+  padding: 80px 20px;
+}
+
+.sobre-nos-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.sobre-nos-texto {
+  flex: 1 1 55%;
+  color: #1f2937;
+}
+
+.sobre-nos-texto h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.sobre-nos-subtitulo {
+  text-transform: uppercase;
+  color: #1e3a8a;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.sobre-nos-texto p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.botao-sobre {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+
+.botao-sobre:hover {
+  background-color: #1e3a8a;
+  color: #fff;
+  border-color: #1e3a8a;
+}
+
+.sobre-nos-estatisticas {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box-estatistica {
+  flex: 1 1 180px;
+  border: 1px solid #4873e7;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 1px 20px 25px hsl(224, 77%, 59%);
+}
+
+.box-estatistica h3 {
+  color: #4873e7;
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
+.box-estatistica p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.sobre-nos-imagem {
+  flex: 1 1 40%;
+}
+
+.sobre-nos-imagem img {
+  width: 100%;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .sobre-nos-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sobre-nos-estatisticas {
+    justify-content: center;
+  }
+  .sobre-nos-imagem {
+    order: -1;
+  }
+}
+
+.area-atuacao {
+  background: #f3f4f6;
+  padding: 80px 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.area-atuacao .subtitulo {
+  color:#1e3a8a;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+.area-atuacao h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.area-atuacao .descricao {
+  font-size: 18px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+.cards-bairros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+}
+
+.bairro-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 18px 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-size: 17px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border-left: 4px solid #1e3a8a;
+}
+
+.bairro-card i {
+  color: #1e3a8a;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.bairro-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.area-atuacao .mensagem-extra {
+  font-style: italic;
+  font-size: 16px;
+  color: #777;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.botao-sobre {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+
+.botao-sobre:hover {
+  background-color: #1e3a8a;
+  color: #fff;
+  border-color: #1e3a8a;
+}
+
+/* Botão fixo no canto inferior direito */
+#btnTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animação de entrada */
+#btnTopo.show {
+  display: block;
+  animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Comportamento de scroll suave */
+html {
+  scroll-behavior: smooth;
+}

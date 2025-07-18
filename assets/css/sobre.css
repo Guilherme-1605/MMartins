@@ -1,0 +1,56 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  background-color: #001f3f;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+section {
+  padding: 2rem 10%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.destaque {
+  background-color: #ffffff;
+  border-left: 6px solid #003366;
+  padding: 1.5rem; 
+  margin: 2rem 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+footer {
+  background-color: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
