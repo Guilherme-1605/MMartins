@@ -1,10 +1,91 @@
-body {
-  font-family: 'Poppins', sans-serif;
+/* Reset global */
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background-color: #f8f9fa;
+  box-sizing: border-box;
+}
+
+/* Estilos do body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* ou 'Poppins', sans-serif */
+  background-color: #f3f4f6;
   color: #333;
+}
+
+/* Top Bar */
+.top-bar {
+  background-image: url('../img/eletrica.png');
+  height: 233px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+.top-bar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.top-bar * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Informações internas da Top Bar */
+.top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  font-size: 14px;
+}
+.top-bar .top-info a {
+  color: white;
+  text-decoration: none;
+}
+.top-bar .top-info a:hover {
+  color: #ddd;
+}
+
+/* Logo */
+.logo {
+  margin: 0 0 10px;
+}
+.logo img {
+  width: 200px;
+}
+
+/* Botões “Follow us” (ícones, links, etc.) dentro da Top Bar */
+.follow-us {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 8px 0;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.navbar a:hover {
+  text-decoration: underline;
 }
 
 header {
