@@ -88,50 +88,167 @@ body {
   text-decoration: underline;
 }
 
-header {
-  background-color: #001f3f;
-  color: white;
-  padding: 2rem;
-  text-align: center;
+/* Cards */
+
+h1 {
+    color: #003366;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-section {
-  padding: 2rem 10%;
+.sobre-nos .container {
   max-width: 1200px;
   margin: auto;
+  padding-top: 30px;
 }
 
-h2 {
-  color: #003366;
-  margin-bottom: 1rem;
+.sobre-nos .intro {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.destaque {
-  background-color: #ffffff;
-  border-left: 6px solid #003366;
-  padding: 1.5rem; 
-  margin: 2rem 0;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-.cards {
+.sobre-nos .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.card {
-  background-color: #ffffff;
+.card-info, .card-testimonial {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 1rem;
+}
+
+.card-testimonial img {
+  width: 80%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10%;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.card-info img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-info h3 {
+  margin: 1rem 0 0.5rem;
+  color: #003366;
+}
+
+.card-info p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.por-que-escolher {
+  text-align: center;
+}
+
+.destaque-box {
+  text-align: left;
+}
+
+.destaque-com-imagem {
+  text-align: center;
+}
+
+.destaque-com-imagem .destaque-box,
+.por-que-escolher .destaque-box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #fff;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
 }
 
-footer {
-  background-color: #001f3f;
-  color: white;
+.destaque-com-imagem .destaque-box img,
+.eletrica-img {
+  flex: 1;
+  max-width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.destaque-com-imagem .destaque-box ul,
+.por-que-escolher .destaque-box ul{
+  flex: 2;
+  list-style: none;
+  font-size: 1rem;
+  color: #333;
+}
+
+
+.card-testimonial {
+  padding: 1.5rem;
+  font-style: italic;
+}
+
+.card-testimonial p {
+  color: #333;
+}
+
+.card-testimonial strong {
+  color: #003366;
+}
+
+.depoimentos {
   text-align: center;
-  padding: 2rem;
-  margin-top: 4rem;
+}
+
+/* botão serviços */
+.navbar {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.navbar a, .dropbtn {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  cursor: pointer;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #000;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Mostrar dropdown quando passar o mouse */
+.dropdown:hover .dropdown-content {
+  display: flex;
 }

@@ -1,90 +1,145 @@
-body{ 
-    background-color: #f3f4f6;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-.sobre-nos .container {
-  padding: 2rem 5%;
-  max-width: 1200px;
-  margin: auto;
+body {
+  background-color: #f0f2f5;
+  color: #333;
 }
 
-.sobre-nos .intro {
+.contact-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
   text-align: center;
-  margin-bottom: 2rem;
 }
 
-.sobre-nos .cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #007bff;
 }
 
-.card-info, .card-testimonial {
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  padding: 1rem;
+.contact-info {
+  margin-bottom: 30px;
+  text-align: left;
 }
 
-.card-info img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.card-info h3 {
-  margin: 1rem 0 0.5rem;
-  color: #003366;
-}
-
-.card-info p {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-.destaque-com-imagem .destaque-box,
-.por-que-escolher .destaque-box {
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin-bottom: 2rem;
 }
 
-.destaque-com-imagem .destaque-box img {
-  flex: 1;
-  max-width: 300px;
-  border-radius: 8px;
-  object-fit: cover;
+.contact-info i {
+  margin-right: 10px;
+  color: #007bff;
 }
 
-.destaque-com-imagem .destaque-box ul,
-.por-que-escolher .destaque-box ul {
-  flex: 2;
-  list-style: none;
+.social-area {
+  margin-bottom: 40px;
+}
+
+.social-area h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+.whatsapp:hover {
+  background-color: #1ebe5b;
+}
+
+.instagram {
+  background-color: #e1306c;
+}
+.instagram:hover {
+  background-color: #c12760;
+}
+
+.facebook {
+  background-color: #1877f2;
+}
+.facebook:hover {
+  background-color: #155fc1;
+}
+
+.contact-form {
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
   font-size: 1rem;
-  color: #333;
 }
 
-.depoimentos {
-  margin-bottom: 2rem;
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
 }
 
-.card-testimonial {
-  padding: 1.5rem;
-  font-style: italic;
+button {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.card-testimonial p {
-  color: #333;
+button:hover {
+  background-color: #0056b3;
 }
 
-.card-testimonial strong {
-  color: #003366;
+@media (max-width: 500px) {
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
