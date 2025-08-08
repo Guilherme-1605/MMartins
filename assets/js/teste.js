@@ -44,7 +44,7 @@
       submitBtn.textContent = 'Enviando...';
   
       try{
-        const response = await fetch("https://formspree.io/f/xpwlogkw", {
+        const response = await fetch("https://formspree.io/f/xpwlogkw", { // TROQUE AQUI PELA SUA URL
           method: "POST",
           body: data,
           headers: { 'Accept': 'application/json' }
