@@ -88,25 +88,39 @@ body {
   text-decoration: underline;
 }
 
-/* Cards */
-
+/* Título */
 h1 {
-    color: #003366;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+  color: #003366;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
+/* Container geral */
 .sobre-nos .container {
   max-width: 1200px;
   margin: auto;
   padding-top: 30px;
 }
 
+/* Intro - Quem Somos */
 .sobre-nos .intro {
-  text-align: center;
-  margin-bottom: 2rem;
+  max-width: 900px;       /* Limita largura para leitura confortável */
+  margin: 0 auto 2rem;    /* Centraliza e dá espaçamento inferior */
+  text-align: justify;    /* Justifica o texto */
+  line-height: 1.8;       /* Espaçamento entre linhas */
+  font-size: 1.05rem;     /* Fonte levemente maior */
+  color: #444;            /* Cor suave */
 }
 
+.sobre-nos .intro p {
+  margin-bottom: 1rem;    /* Espaço entre parágrafos */
+}
+
+.sobre-nos .intro strong {
+  color: #003366;         /* Destaque para o nome da empresa */
+}
+
+/* Cards */
 .sobre-nos .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -148,6 +162,7 @@ h1 {
   color: #555;
 }
 
+/* Seção Por que Escolher */
 .por-que-escolher {
   text-align: center;
 }
@@ -156,6 +171,7 @@ h1 {
   text-align: left;
 }
 
+/* Destaque com imagem */
 .destaque-com-imagem {
   text-align: center;
 }
@@ -181,14 +197,14 @@ h1 {
 }
 
 .destaque-com-imagem .destaque-box ul,
-.por-que-escolher .destaque-box ul{
+.por-que-escolher .destaque-box ul {
   flex: 2;
   list-style: none;
   font-size: 1rem;
   color: #333;
 }
 
-
+/* Depoimentos */
 .card-testimonial {
   padding: 1.5rem;
   font-style: italic;
@@ -206,7 +222,7 @@ h1 {
   text-align: center;
 }
 
-/* botão serviços */
+/* Botão serviços */
 .navbar {
   display: flex;
   gap: 1rem;
@@ -246,7 +262,6 @@ h1 {
   text-decoration: none;
   display: block;
 }
-
 
 /* Mostrar dropdown quando passar o mouse */
 .dropdown:hover .dropdown-content {

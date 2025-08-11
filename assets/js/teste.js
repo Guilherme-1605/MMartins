@@ -44,14 +44,14 @@
       submitBtn.textContent = 'Enviando...';
   
       try{
-        const response = await fetch("https://formspree.io/f/xpwlogkw", { // TROQUE AQUI PELA SUA URL
+        const response = await fetch("https://formspree.io/f/xpwlogkw", {
           method: "POST",
           body: data,
           headers: { 'Accept': 'application/json' }
         });
   
         if(response.ok){
-          showMessage('ok', 'Mensagem enviada com sucesso — responderei em breve!');
+          showMessage('ok', 'Mensagem enviada com sucesso. Iremos te responder em breve!');
           form.reset();
         } else {
           showMessage('err', 'Ocorreu um erro ao enviar. Tente novamente.');
