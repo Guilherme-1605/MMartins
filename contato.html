@@ -10,16 +10,16 @@
   <section class="contact-wrap" aria-label="Área de contato">
     <div class="left">
       <div class="brand">
-        <div class="logo"><img src="assets/img/sem_fundo_logo_para_mmartins_alavancagem_cherry.png" alt=""></div>
+        <div class="logo"></div>
         <div>
-          <h2>Fale comigo</h2>
-          <p class="lead">Tem um projeto, parceria ou só quer dizer oi? Preencha o formulário e eu responderei o mais rápido possível.</p>
+          <h2>Precisando de manutenção?</h2>
+          <p class="lead">Estamos prontos para resolver! Seja geladeira, placa eletrônica, instalação elétrica ou suporte técnico — a MMartins cuida de tudo para você, com qualidade e confiança.</p>
         </div>
       </div>
       <div class="info-list">
-        <div class="info-item">📧 <span class="muted">mmartinsdtup@gmail.com</span></div>
-        <div class="info-item">📞 <span class="muted">+55 (12) 99681-3760</span></div>
-        <div class="info-item">📍 <span class="muted">Caraguatatuba-SP </span></div>
+        <div class="info-item">📧 <a href="" class="muted">mmartinsdtup@gmail.com</a></div>
+        <div class="info-item">📞 <a href="http://wa.me/5512996813760" target="_blank" class="muted">+55 (12) 99681-3760</a></div>
+        <div class="info-item">📍 <a href="https://maps.app.goo.gl/QUrWB9R5NJxvdk8p8" target="_blank" class="muted">Caraguatatuba-SP </a></div>
       </div>
     </div>
     <div class="right">
@@ -32,7 +32,7 @@
         <div class="row">
           <div class="col field">
             <label for="name">Seu nome</label>
-            <input id="name" name="name" type="text" placeholder="Ex: Maria Silva" required>
+            <input id="name" name="name" type="text" placeholder="Ex: Yago" required>
           </div>
           <div class="col field">
             <label for="email">Email</label>
@@ -41,13 +41,31 @@
         </div>
         <div class="field">
           <label for="subject">Assunto</label>
-          <input id="subject" name="subject" type="text" placeholder="Sobre o que é?" required>
+          <input id="subject" name="subject" type="text" placeholder="Qual serviço você precisa?" required>
         </div>
         <div class="field">
           <label for="message">Mensagem</label>
-          <textarea id="message" name="message" placeholder="Escreva sua mensagem..." required></textarea>
+          <textarea id="message" name="message" placeholder="Fale um pouco sobre o que você precisa" required></textarea>
         </div>
         <div class="field">
+          <label for="data">Escolha a data</label>
+<input type="text" id="data" name="data" placeholder="dd/mm/aaaa" maxlength="10">
+
+<!-- CSS do Flatpickr -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+<label for="data">Escolha a data</label>
+<input type="text" id="data" name="data" placeholder="dd/mm/aaaa">
+
+<!-- JS do Flatpickr -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+flatpickr("#data", {
+    dateFormat: "d/m/Y",
+    allowInput: true // permite apagar e digitar dígito por dígito
+});
+</script>
+
           <label for="budget">Orçamento aproximado (opcional)</label>
           <select id="budget" name="budget">
             <option value="">— selecione —</option>
