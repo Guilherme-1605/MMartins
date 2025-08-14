@@ -1,3 +1,6 @@
+/*-----------------------------------
+  Variáveis e Reset Global
+-----------------------------------*/
 :root {
     --bg: #0f1724;
     --card: #0b1220;
@@ -10,8 +13,9 @@
     font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
-  /* Reset e base */
-  * {
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -21,35 +25,147 @@ html, body {
 
 body {
     margin: 0;
-    background: linear-gradient(180deg, #071021 0%, #071831 60%);
-    color: #e6eef6;
-    display: flex;
+    font-family: Arial, sans-serif;
+    color: #333;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 28px;
+    
+    /*background-image: url('../img/equipe.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;*/
+
 }
 
-  /* Layout do formulário */
+/*-----------------------------------
+  Top Bar e Logo
+-----------------------------------*/
+.top-bar {
+    background-image: url('../img/eletrica.png');
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.9);
+    height: 233px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+}
+
+.top-bar::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.top-bar * {
+    position: relative;
+    z-index: 2;
+}
+
+.top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    font-size: 14px;
+}
+
+.follow-us {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+/*-----------------------------------
+  Navbar
+-----------------------------------*/
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 8px 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.navbar a,
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0.5rem 1rem;
+    display: block;
+    cursor: pointer;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #000;
+    text-decoration: underline;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/*-----------------------------------
+    Contato / Formulário
+-----------------------------------*/
 .contact-wrap {
-    width: 100%;
-    max-width: 1000px;
-    background: linear-gradient(180deg, var(--card), rgba(11, 18, 32, 0.6));
-    border-radius: var(--radius);
-    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.7);
-    padding: 28px;
     display: grid;
-    gap: 20px;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
     align-items: start;
+    justify-content: center;
+    padding: 28px;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: var(--radius);
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.7);
 }
 
 @media (max-width: 820px) {
     .contact-wrap {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
-  /* Coluna esquerda */
+/* Coluna esquerda */
 .left {
     padding: 18px;
     border-radius: 10px;
@@ -72,7 +188,7 @@ body {
     font-weight: 700;
 }
 
-img {
+.left img {
     width: 50px;
     height: auto;
     border-radius: 10px;
@@ -102,11 +218,12 @@ p.lead {
     align-items: center;
 }
 
-.info-item span {
+.info-item span,
+.info-item a.muted {
     color: var(--muted);
 }
 
-  /* Formulário */
+/* Formulário */
 form {
     display: flex;
     flex-direction: column;
@@ -166,7 +283,7 @@ textarea {
 }
 
 button {
-    background: linear-gradient(90deg, var(--accent), #7c3aed);
+    background: linear-gradient(90deg, rgb(12, 255, 4));
     border: 0;
     color: #042022;
     padding: 10px 14px;
@@ -185,7 +302,7 @@ button[disabled] {
     font-size: 13px;
 }
 
-  /* Avisos */
+/* Avisos */
 .notice {
     padding: 10px 12px;
     border-radius: 9px;
@@ -204,7 +321,7 @@ button[disabled] {
     color: var(--danger);
 }
 
-  /* Honeypot */
+/* Honeypot (anti-spam) */
 .hp {
     position: absolute;
     left: -9999px;
@@ -212,4 +329,12 @@ button[disabled] {
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+
+/* Ajustes gerais */
+.ajuste {
+    display: flex;
+    padding: 20px;
+    padding-top: 50px;
+    justify-content: center;
 }

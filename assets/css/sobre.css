@@ -16,6 +16,7 @@ body {
 /* Top Bar */
 .top-bar {
   background-image: url('../img/eletrica.png');
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.9);
   height: 233px;
   background-size: cover;
   background-position: center;
