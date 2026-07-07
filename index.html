@@ -1,303 +1,200 @@
 <!DOCTYPE html>
-  <html lang="pt-br">
-    <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<!--descrição que aparece no antes de entrar no site-->
-
-    <meta name="description" content="Faça as manutenções com um profissional qualificado e experiente. MMartins oferece serviços de manutenção em Câmara Fria, Geladeiras Side by Side, Lava e Seca, Elétrica, Placas Eletrônicas e Informática."/>
-
-<!-- palavras chaves que ajudam a encontrar o site-->
-
-    <meta name="title" content="Faça as manutenções com um profissional qualificado e experiente. MMartins oferece serviços de manutenção em Câmara Fria, Geladeiras Side by Side, Lava e Seca, Elétrica, Placas Eletrônicas e Informática."/>
-
-    <title> MMartins </title>
-
-<!--favicon-->
-
-    <link rel="icon" href="assets/img/logo_para_mmartins_alavancagem_cherry.png" type="image/x-icon" />
-
-<!-- CSS -->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-<!-- Fontes do Google Fonts -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"  />
-  </head>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MMartins Tech - Soluções em manutenção, elétrica, reparos e desenvolvimento web em Caraguatatuba-SP." />
+  <title>MMartins Tech - Manutenção e Serviços Técnicos</title>
+  <link rel="icon" href="assets/img/logo_para_mmartins_alavancagem_cherry.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/servicos-shared.css" />
+  <link rel="stylesheet" href="assets/css/darkmode.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
 <body>
 
-<!-- Cabeçalho -->
+<div class="top-bar">
+  <div class="top-info"><div class="follow-us"></div></div>
+  <div class="logo">
+    <a href="index.html">
+      <img src="assets/img/sem_fundo_logo_para_mmartins_alavancagem_cherry.png" alt="MMartins Tech">
+    </a>
+  </div>
+</div>
 
-  <div class="top-bar">
-    <div class="top-info">
-      <div class="follow-us">
-      </div>
-    </div>
-    
-    <div class="logo">
-        <a href="index.html">
-            <img src="assets/img/sem_fundo_logo_para_mmartins_alavancagem_cherry.png" alt="MMartins">
-        </a>
-    </div>
-    </div>
-
-    <div class="navbar">
-    <a href="index.html">HOME</a>
-    <a href="sobre.html">SOBRE NÓS</a>
-    <div class="dropdown">
+<div class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="sobre.html">SOBRE NÓS</a>
+  <div class="dropdown">
     <a href="#" class="dropbtn">SERVIÇOS</a>
     <div class="dropdown-content">
-      <a href="#">Serviço 1</a>
-      <a href="#">Serviço 2</a>
-      <a href="#">Serviço 3</a>
-      <a href="#">Serviço 4</a>
-      <a href="#">Serviço 5</a>
+      <a href="servico1-casa.html">Para sua Casa</a>
+      <a href="servico2-comercio.html">Para seu Comércio</a>
+      <a href="servico3-industria.html">Para sua Indústria</a>
+      <a href="servico4-placas.html">Placas Eletrônicas</a>
+      <a href="servico5-web.html">Informática e Web</a>
     </div>
   </div>
-    <a href="contato.html">CONTATO</a>
+  <a href="contato.html">CONTATO</a>
 </div>
 
+<button id="dark-mode-toggle" title="Alternar Modo Escuro">☀️</button>
 
-
-  <!--CARROSSEL-->
-
-  <div class="nossos-servicos">
-    <h1> Nossos serviços </h1>
-</div>
-
-  <body>
-    <div class="container swiper">
-      <div class="wrapper">
-        <div class="card-list swiper-wrapper">
-
-          <!-- Primeiro Card -->
-
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="assets/img/diagnostico-de-equipamento-perfil-de-homem-serio-olhando-para-maquina-de-lavar-louca-aberta-na-cozinha.jpg" alt="Design Trends" />
-              <div class="card-tag">PARA SUA CASA</div>
-            </div>
-
-            <div class="card-content">
-              <h3 class="card-title">Conforto e Segurança no Seu Lar</h3>
-              <p class="card-text">Instalação elétrica, troca de tomadas, chuveiros e luminárias, reparo de eletrodomésticos, manutenção geral e muito mais para deixar sua casa segura e funcional.</p>
-              <div class="card-footer">
-                <div class="card-profile">
-                </div>
-                <a href="#" class="card-button">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Segundo Card -->
-
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="assets/img/Para-seu-comercio.jpg" alt="COMÉRCIO" />
-              <div class="card-tag">PARA SEU COMÉRCIO</div>
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">Seu Negócio Sempre em Funcionamento</h3>
-              <p class="card-text">Serviços elétricos, conserto de equipamentos, ajustes e manutenções rápidas para garantir que seu comércio nunca pare.</p>
-              <div class="card-footer">
-                <div class="card-profile">
-                </div>
-                <a href="#" class="card-button">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Terceiro Card -->
-
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="assets/img/industria.jpg" alt="INDÚSTRIA" />
-              <div class="card-tag">PARA SUA INDÚSTRIA</div>
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">Manutenção de Alta Performance</h3>
-              <p class="card-text">Conserto de máquinas, reparo de placas, diagnóstico de falhas e serviços elétricos completos para manter sua produção no máximo desempenho.</p>
-              <div class="card-footer">
-                <div class="card-profile">
-                </div>
-                <a href="#" class="card-button">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Quarto Card -->
-
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="assets/img/computador.jpg" alt="Productivity" />
-              <div class="card-tag">CONSERTOS EM PLACAS</div>
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">Diagnóstico e Reparo Especializado</h3>
-              <p class="card-text">Identificamos e corrigimos defeitos em placas eletrônicas, eletrodomésticos e grandes maquinários industriais, garantindo a restauração completa e eficiente do funcionamento dos seus equipamentos com rapidez e qualidade.</p>
-              <div class="card-footer">
-                <div class="card-profile">
-                </div>
-                <a href="#" class="card-button">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Quinto Card -->
-
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="assets/img/programacao.jpg" alt="Animation" />
-              <div class="card-tag">INFOMÁTICA E DESENVOLVIMENTOS</div>
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">Tecnologia e Inovação ao Seu Alcance</h3>
-              <p class="card-text">Assistência em informática, manutenção completa de sistemas e desenvolvimento de sites modernos e responsivos para impulsionar sua presença online de forma profissional e eficiente.</p>
-              <div class="card-footer">
-                <div class="card-profile">
-                </div>
-                <a href="#" class="card-button">Saiba mais</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pagination -->
-
-        <div class="swiper-pagination"></div>
-
-        <!-- Navigation Buttons -->
-
-        <div class="swiper-slide-button swiper-button-prev"></div>
-        <div class="swiper-slide-button swiper-button-next"></div>
-      </div>
+<section class="hero-srv">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">🔧 Serviços Técnicos Especializados</div>
+    <h1>Sua confiança é nossa <span>prioridade</span></h1>
+    <p>Soluções completas em manutenção, elétrica, reparos e desenvolvimento web. Atendemos residências, comércios e indústrias com qualidade, agilidade e garantia em Caraguatatuba e região.</p>
+    <div class="hero-actions">
+      <a href="contato.html" class="btn-primary">Solicitar Atendimento</a>
+      <a href="http://wa.me/5512996813760" target="_blank" class="btn-outline">Falar no WhatsApp</a>
     </div>
-
-
-
-  <!-- SOBRE NÓS - ESTILO PROFISSIONAL -->
-  <section class="sobre-nos-section">
-    <div class="container sobre-nos-content">
-      <div class="sobre-nos-texto">
-        <span class="sobre-nos-subtitulo">MMartins</span>
-        <h2>Sobre a nossa empresa</h2>
-        <p>
-          Oferecemos soluções completas em elétrica, manutenção e reparos, atendendo residências, comércios e indústrias com segurança, agilidade e qualidade. Nossa equipe é experiente, trabalha com tecnologia de ponta e está preparada para resolver desde pequenos serviços até projetos de alta complexidade.
-        </p>
-  
-        <a href="sobre.html" class="botao-sobre">Saiba mais</a>
-  
-        <div class="sobre-nos-estatisticas">
-          <div class="box-estatistica">
-            <h3>+10 anos</h3>
-            <p>de experiência</p>
-          </div>
-          <div class="box-estatistica">
-            <h3>+10 000</h3>
-            <p>consertos realizados</p>
-          </div>
-        </div>
-      </div>
-  
-      <div class="sobre-nos-imagem">
-        <img src="assets/img/sem_fundo_logo_para_mmartins_alavancagem_cherry.png">
-      </div>
-    </div>
-  </section>
-
-
-<section class="area-atuacao">
-  <div class="container">
-    <h2>Onde Atuamos</h2>
-    <p class="descricao">
-      Prestamos serviços especializados com agilidade, qualidade e confiança em diversas regiões de <strong>São Paulo</strong>.
-    </p>
-
-    <div class="cards-bairros">
-      <div class="bairro-card"><i class="fas fa-map-pin"></i> Caraguatatuba </div>
-      <div class="bairro-card"><i class="fas fa-map-pin"></i> Ubatuba </div>
-      <div class="bairro-card"><i class="fas fa-map-pin"></i> São Sebastião </div>
-      <div class="bairro-card"><i class="fas fa-map-pin"></i> Ilhabela</div>
-      <div class="bairro-card"><i class="fas fa-map-pin"></i> Jambeiro</div>
-    </div>
-    <p class="descricao">
-    Caso a sua cidade não esteja listada, entre em contato conosco para verificar a possibilidade de atendimento.
-    </p>
-    <p class="mensagem-extra">
-        <a href="#" class="botao-sobre">Entre em contato</a>
-    </p>
-
   </div>
 </section>
 
-<!-- Rodapé -->
-<footer class="footer">
-  <div class="footer-container">
-    <!-- Guia do Site -->
-    <div class="footer-section">
-      <h3>Guia do Site</h3>
+<section class="section">
+  <div class="section-inner">
+    <span class="section-label">Nossos Serviços</span>
+    <h2 class="section-title">Soluções para Todos os Seus Problemas</h2>
+    <p class="section-sub">Atendemos residências, comércios e indústrias com profissionalismo, qualidade e preço justo.</p>
+    <div class="servicos-grid">
+      <div class="servico-card">
+        <div class="card-img-wrapper">
+          <img class="card-img" src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=600&q=80" alt="Serviços Residenciais" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Para sua Casa</h3>
+          <p>Manutenção em eletrodomésticos, elétrica residencial, automações inteligentes e muito mais para sua tranquilidade.</p>
+        </div>
+      </div>
+      <div class="servico-card">
+        <div class="card-img-wrapper">
+          <img class="card-img" src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=600&q=80" alt="Serviços Comerciais" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Para seu Comércio</h3>
+          <p>Serviços elétricos, conserto de equipamentos e manutenções rápidas para manter seu negócio funcionando.</p>
+        </div>
+      </div>
+      <div class="servico-card">
+        <div class="card-img-wrapper">
+          <img class="card-img" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80" alt="Serviços Industriais" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Para sua Indústria</h3>
+          <p>Conserto de máquinas, reparo de placas, diagnóstico de falhas e serviços elétricos de alta performance.</p>
+        </div>
+      </div>
+      <div class="servico-card">
+        <div class="card-img-wrapper">
+          <img class="card-img" src="https://images.unsplash.com/photo-1558002038-1055907df827?w=600&q=80" alt="Placas Eletrônicas" loading="lazy">
+        </div>
+        <div class="card-body">
+          
+          <h3>Placas Eletrônicas</h3>
+          <p>Diagnóstico e reparo especializado em placas eletrônicas, eletrodomésticos e maquinários industriais.</p>
+        </div>
+      </div>
+      <div class="servico-card">
+        <div class="card-img-wrapper">
+          <img class="card-img" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Informática e Web" loading="lazy">
+        </div>
+        <div class="card-body">
+          
+          <h3>Informática e Web</h3>
+          <p>Assistência em informática, suporte técnico e desenvolvimento de sites modernos e responsivos.</p>
+        </div>
+      </div>
+      <div class="servico-card">
+        <div class="card-img-wrapper">
+          <img class="card-img" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" alt="Manutenção Preventiva" loading="lazy">
+        </div>
+        <div class="card-body">
+          
+          <h3>Manutenção Preventiva</h3>
+          <p>Evite surpresas com revisões periódicas. Aumente a vida útil dos seus equipamentos e economize energia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-bg-gray">
+  <div class="section-inner">
+    <span class="section-label">Por que nos escolher</span>
+    <h2 class="section-title">MMartins Tech: Qualidade que Você Vê e Sente</h2>
+    <p class="section-sub">Mais de 10 anos de experiência e confiança de clientes em toda a região.</p>
+    <div class="diferenciais-grid">
+      <div class="diff-item"><div class="diff-icon">🏅</div><h4>Técnicos Certificados</h4><p>Profissionais qualificados com experiência comprovada em todos os serviços.</p></div>
+      <div class="diff-item"><div class="diff-icon">⚡</div><h4>Atendimento Rápido</h4><p>Pontualidade e agilidade. Sabemos que você não pode ficar sem seus equipamentos.</p></div>
+      <div class="diff-item"><div class="diff-icon">🔒</div><h4>12 Meses de Garantia</h4><p>Todo serviço tem garantia em peças e mão de obra. Você fica tranquilo por mais tempo.</p></div>
+      <div class="diff-item"><div class="diff-icon">💰</div><h4>Preços Justos</h4><p>Orçamento transparente, sem surpresas. Você aprova antes de qualquer serviço iniciar.</p></div>
+      <div class="diff-item"><div class="diff-icon">🔍</div><h4>Diagnóstico Gratuito</h4><p>Avaliamos seu equipamento sem cobrar nada pela visita inicial de diagnóstico.</p></div>
+      <div class="diff-item"><div class="diff-icon">🚨</div><h4>Atende Emergências</h4><p>Problemas urgentes acontecem. Estamos disponíveis quando você mais precisa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="cta-final-inner">
+    <h2>Pronto para resolver seus problemas?</h2>
+    <p>Entre em contato agora e receba diagnóstico gratuito em sua residência, comércio ou indústria.</p>
+    <div class="cta-final-btns">
+      <a href="contato.html" class="btn-primary">Solicitar Atendimento</a>
+      <a href="https://wa.me/5512996813760" target="_blank" class="btn-wa">
+  <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-srv">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h4>MMartins Tech</h4>
+      <p>Soluções em serviços técnicos, manutenção, desenvolvimento web e tecnologia em Caraguatatuba-SP.</p>
+    </div>
+    <div>
+      <h4>Navegação</h4>
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="sobre.html">Sobre Nós</a></li>
-        <li><a href="index.html#servicos">Serviços</a></li>
+        <li><a href="servico1-casa.html">Serviços</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </div>
-    
-    <!-- Ajuda 
-    <div class="footer-section">
-      <h3>Ajuda</h3>
-      <ul>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Suporte</a></li>
-        <li><a href="#">Política de Privacidade</a></li>
-        <li><a href="#">Termos de Uso</a></li>
-      </ul>
-    </div> -->
-
-    <!-- Redes Sociais -->
-    <div class="footer-section">
-      <h3>Redes Sociais</h3>
-      <div class="social-links"> 
-        <a href="https://www.instagram.com/mmartinstech_/" target="_blank">Instagram</a>  
+    <div>
+      <h4>Contato</h4>
+      <div class="footer-contact-item">📧 <a href="mailto:mmartinsdtup@gmail.com">mmartinsdtup@gmail.com</a></div>
+      <div class="footer-contact-item">📱 <a href="http://wa.me/5512996813760" target="_blank">+55 (12) 99681-3760</a></div>
+      <div class="footer-contact-item">📍 <a href="https://maps.app.goo.gl/QUrWB9R5NJxvdk8p8" target="_blank">Caraguatatuba-SP</a></div>
+      <h4 style="margin-top:18px;">Redes Sociais</h4>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/mmartinstech_/" target="_blank">Instagram</a>
         <a href="https://www.youtube.com/@ysummitrepair" target="_blank">YouTube</a>
+        <a href="https://www.tiktok.com/@mmartins.tech" target="_blank">TikTok</a>
       </div>
     </div>
-    
-    <!-- Contato e Localização -->
-<div class="footer-section">
-<h3>Contato</h3>
-<a href="mailto:mmartinsdtup@gmail.com">mmartinsdtup@gmail.com</a><br>
-<a href="http://wa.me/5512996813760" target="_blank" class="muted">+55 (12) 99681-3760</a>
-
-<h3>Localização</h3>
-<a href="https://maps.app.goo.gl/QUrWB9R5NJxvdk8p8" target="_blank" class="muted">Caraguatatuba-SP </a>
-</div>
   </div>
-
-  <div class="footer-bottom">
-    <p>© 2025 - Seu Site | Desenvolvido por <strong><a href="http://wa.me/5512992328966" target="_blank">Guilherme</a></strong></p>
+  <div class="footer-bottom-bar">
+    <span>© 2026 MMartins Tech — Todos os direitos reservados.</span>
+    <span>Caraguatatuba-SP</span>
   </div>
 </footer>
-</body>
 
 <!-- WhatsApp -->
 <a href="http://wa.me/5512996813760" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 100; padding-right: 20px;">
   <img src="assets/img/whatsapp.png" alt="WhatsApp" width="40" height="40">
 </a>
 
-
-
-
-<!-- Linking Swiper script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Custom Script -->
-    <script src="assets/js/script.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/darkmode.js"></script>
+</body>
 </html>
